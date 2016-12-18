@@ -1,7 +1,6 @@
-// Include React 
+
 var React = require('react');
 
-// Component creation
 var Results = React.createClass({
 
 	getInitialState: function(){
@@ -30,13 +29,12 @@ var Results = React.createClass({
 		this.setState({results: myResults});
 	},
 	
-	// Here we render the function
 	render: function(){
 		return(
 
 			<div className="panel panel-warning">
 				<div className="panel-heading">
-					<h3 className="panel-title text-center"><strong>Results</strong></h3>
+					<h3 className="panel-title text-center"><strong>Your Results</strong></h3>
 				</div>
 				<div className="panel-body">
 						{this.state.results}
@@ -47,5 +45,5 @@ var Results = React.createClass({
 	}
 });
 
-// Export the component back for use in other files
+
 module.exports = Results;

@@ -1,7 +1,5 @@
-// Include React 
 var React = require('react');
 
-// This is the saved component. It will be used to show a log of saved articles.
 var Saved = React.createClass({
 
 	getInitialState: function(){
@@ -26,7 +24,6 @@ var Saved = React.createClass({
 		this.setState({savedArticles: myResults});
 	},
 
-	// Here we render the function
 	render: function(){
 
 		return(
@@ -46,7 +43,4 @@ var Saved = React.createClass({
 	}
 });
 
-
-
-// Export the component back for use in other files
 module.exports = Saved;
